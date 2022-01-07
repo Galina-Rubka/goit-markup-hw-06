@@ -50,8 +50,48 @@
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button data-modal-close type="button" class="modal-button">&#xd7</button>
+                    <b class="modal-head">Оставьте свои данные, мы вам перезвоним</b>
+                   <form class="modal-form">
+                        <label class="input-box">
+                            Имя
+                            <input type="text" name="user-name" class="form-input" required>
+                                <span class="form-icon">
+                                    <svg class="icons-svg" height="18px" width="18px">
+                                        <use href="images/icons.svg#icon-person" ></use>
+                                    </svg>
+                                </span>
+                        </label>
+                        <label class="input-box">
+                            Телефон
+                            <input type="tel" class="form-input" pattern="[0-9]{10}" title="0963880505" required>
+                                <span class="form-icon">
+                                    <svg class="icons-svg" height="18px" width="18px">
+                                        <use href="images/icons.svg#icon-phone"></use>
+                                    </svg>
+                                </span>
+                        </label>
+                        <label class="input-box">
+                            Почта
+                            <input type="email" class="form-input">
+                                <span class="form-icon">
+                                    <svg class="icons-svg" height="18px" width="18px">
+                                        <use href="images/icons.svg#icon-email"></use>
+                                    </svg>
+                                </span>
+                        </label>
+                        <label class="input-box">
+                            Комментарий
+                           <textarea name="" id="" class="form-comment" placeholder="Введите текст"></textarea>
+                        </label>
+                       
+                            <input type="checkbox" class="form-checkbox" id="policy-chek">
+                        <label class="input-checkbox" for="policy-chek">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                        </label> 
+                            <button type="submit" class="form-btn">Отправить</button>
+                   </form>
+                
                     </div>
-                    </div>
+                </div>
         </section>
        
     <!-- Section-our-work -->

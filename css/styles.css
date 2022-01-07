@@ -152,8 +152,6 @@ img {
   pointer-events: none;
 }
 
-.icon-close {
-}
 .modal {
   position: absolute;
   width: 528px;
@@ -167,6 +165,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: opacity 2s linear;
+  padding: 40px;
 }
 
 .modal-button {
@@ -188,6 +187,104 @@ img {
 .modal-button:hover {
   color: var(--them-colour);
 }
+.modal-head {
+  display: block;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: #212121;
+}
+.input-box {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.icons-svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transition: 0.3s linear fill;
+}
+.form-input,
+.form-comment {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 10px 0 42px;
+  transition: 0.3s linear border;
+}
+.form-input:focus {
+  outline: none;
+  border: 1px solid var(--them-colour);
+}
+.form-input:focus + .icons-svg {
+  fill: var(--them-colour);
+}
+.form-comment {
+  font-family: inherit;
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+}
+.form-comment::placeholder {
+  color: rgba(117, 117, 117, 0, 5);
+}
+.form-comment:focus {
+  outline: none;
+  border: 1px solid var(--them-colour);
+}
+.input-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #757575;
+}
+.input-checkbox a {
+  color: var(--them-colour);
+}
+.form-checkbox {
+  visibility: hidden;
+}
+.input-checkbox::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+.form-checkbox:checked + .input-checkbox::before {
+  background-color: #2196f3;
+  background-image: url(../images/icons.svg#icon-check-input);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-btn {
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  height: 50px;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 120px;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 .paragraph-name {
   font-weight: bold;
   font-size: 14px;
