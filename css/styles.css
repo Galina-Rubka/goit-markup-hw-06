@@ -280,7 +280,7 @@ img {
   width: 16px;
   border: 2px solid #212121;
   border-radius: 2px;
-  margin-right: 8px;
+  margin-right: 7px;
 }
 .form-icon-check {
   display: block;
@@ -289,21 +289,18 @@ img {
 .check-link {
   margin-left: 5px;
 }
-/* .icons-svg-chek {
-  display: block;
-  position: absolute;
-} */
 
 .form-btn {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
   height: 50px;
   width: 200px;
   margin-top: 30px;
   margin-left: 120px;
   color: #ffffff;
-  background: #2196f3;
+  background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -900,4 +897,58 @@ h6 {
   text-decoration: none;
   padding: 60px 0px;
   display: flex;
+}
+.footer-label {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+  margin-left: 94px;
+}
+
+.btn-send {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.form-email {
+  display: flex;
+  margin-left: 93px;
+
+  height: 50px;
+}
+.form-email::placeholder {
+  color: rgba(255, 255, 255, 0, 6);
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: #ffffff00;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+}
+.form-btn-footer {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-left: 12px;
+  color: #ffffff;
+  justify-content: center;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.icon-fly {
+  margin-left: 12px;
 }
