@@ -933,6 +933,7 @@ h6 {
   padding-left: 16px;
 }
 .form-btn-footer {
+  cursor: pointer;
   width: 200px;
   height: 50px;
   font-size: 16px;
