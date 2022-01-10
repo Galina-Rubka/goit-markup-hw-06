@@ -227,13 +227,11 @@ img {
   padding: 0 10px 0 42px;
   transition: 0.3s linear border;
 }
-.form-input:focus,
-.form-input:hover {
+.form-input:focus {
   outline: none;
   border: 1px solid var(--them-colour);
 }
-.form-input:focus + .icons-svg,
-.form-input:hover + .icons-svg {
+.form-input:focus + .icons-svg {
   fill: var(--them-colour);
 }
 .form-comment {
@@ -245,8 +243,7 @@ img {
 .form-comment::placeholder {
   color: rgba(117, 117, 117, 0, 5);
 }
-.form-comment:focus,
-.form-comment:hover {
+.form-comment:focus {
   outline: none;
   border: 1px solid var(--them-colour);
 }
