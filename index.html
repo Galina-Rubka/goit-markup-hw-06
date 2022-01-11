@@ -48,13 +48,13 @@
             <button type="button" class="head-button" data-modal-open>Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                            <button data-modal-close type="button" class="modal-button">&#xd7</button>
+                            <button data-modal-close type="button" class="modal-button">&#xd7;</button>
                         <b class="modal-head">Оставьте свои данные, мы вам перезвоним</b>
                         <form class="modal-form">
                             <label class="input-box">
                                 Имя
                                 <span class="form-icon">
-                                    <input name="user" type="text" name="user-name" class="form-input" required>
+                                    <input name="user" type="text" class="form-input" required>
                                         <svg class="icons-svg" height="18px" width="18px">
                                             <use href="images/icons.svg#icon-person" ></use>
                                         </svg>
@@ -62,7 +62,7 @@
                             </label>
                             <label class="input-box">
                                 Телефон
-                                <span class="form-icon"></span>
+                                <span class="form-icon">
                                     <input name="phone" type="tel" class="form-input" pattern="[0-9]{10}" title="0963880505" required>
                                         <svg class="icons-svg" height="18px" width="18px">
                                             <use href="images/icons.svg#icon-phone"></use>
@@ -80,7 +80,7 @@
                             </label>
                             <label class="input-box">
                                 Комментарий
-                            <textarea name="textarea" id="" class="form-comment" placeholder="Введите текст"></textarea>
+                            <textarea name="textarea" id="comment" class="form-comment" placeholder="Введите текст"></textarea>
                             </label>
                                 <input name="checkbox" type="checkbox" class="form-checkbox" id="policy-chek">
                                     <span class="form-icon-check">
@@ -418,10 +418,10 @@
                         </div>
                         <div class="btn-send">
                             <h4 class="footer-label">Подпишитесь на рассылку</h4>
-                            <form action="" class="form-email">
-                               <label for="">
+                            <form class="form-email">
+                               <label>
                                     <input name="email" type="text" placeholder="E-mail" class="footer-input">
-                        </label>
+                                </label>
                                
                                 <button type="submit" class="form-btn-footer">Подписатся
                                     <svg class="icon-fly" width="24px" height="24px">
